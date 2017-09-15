@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="138.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timer.controllers.clockController">
+   <children>
+      <SplitPane dividerPositions="0.6" layoutX="80.0" layoutY="-7.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <StackPane prefHeight="79.0" prefWidth="318.0" style="-fx-background-color: #c8e0f8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="clocklbl" text="hh:mm:ss" textFill="#0756a1">
+                           <font>
+                              <Font name="Verdana" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #c8e0f8;">
+               <children>
+                  <Button fx:id="startButton" layoutX="51.0" layoutY="13.0" mnemonicParsing="false" onAction="#startClockEvent" text="Start">
+                     <effect>
+                        <DropShadow />
+                     </effect></Button>
+                  <Button fx:id="stopButton" layoutX="205.0" layoutY="13.0" mnemonicParsing="false" onAction="#stopClockEvent" text="Stop">
+                     <effect>
+                        <DropShadow />
+                     </effect></Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
